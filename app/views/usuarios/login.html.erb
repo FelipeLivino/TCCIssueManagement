@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript">
+		$(document).on("click",function() {
+			$( '#btnCadastrar').on( "click", function() {
+				window.location.href = '../cadastroUsuario';
+		 	});
+		});
+		</script>
 		<title>Easy-Issue - Login</title>
 		<meta charset="utf-8">
 	</head>
@@ -10,12 +17,13 @@
 		</div>
 		<div>
 			<h3>Login</h3><br>
-			Email: <input type="email" ></input><br>
-			Senha: <input type="password"></input><br>
+			Email: <input type="email" required="true"></input><br>
+			Senha: <input type="password" required="true"></input><br>
 			<div>
-				<input type="button" value="Cadastrar" id="btnCadastrar"></input>
-				<input type="button" value="Login" id="btnLogin"></input>
+				<input type="submit" value="Cadastrar" id="btnCadastrar"></input>
+				<input type="submit" value="Login" id="btnLogin"></input>
 			</div>
+
 		</div>
 	</body>
 </html>

@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="file:///C:/Users/Felipe/Documents/TCC/html%20-%20sem%20ruby/js/jquery-2.2.3.min">
-			$(document).on('ready',function{
-				alert('funcionou');	
+		<script type="text/javascript">
+			var tipoDeUsuario;
+			$(document).on("click",function() {
+			    
+			    $( '.btn_cancelar').on( "click", function() {
+				  window.location.href = '..';
+			 	});
+			 	
+			 	$( '.btn_avancar').on( "click", function() {
+				  tipoDeUsuario = $('#userTypeSelected').val();
+				  if(tipoDeUsuario.length != 0){
+				  	$('.btn_voltar').show();
+				  	$('.btn_avancar').hide();
+				  	$('.btn_salvar').show();
+				  	if(tipoDeUsuario.indexOf("Eu") != -1){
+				  		$('.dividir_usuario').hide();
+				  		$('.cadastro_pessoa_fisica').show();
+				  	}else{
+						$('.dividir_usuario').hide();
+				  		$('.cadastro_pessoa_juridica').show();
+				  	}
+				  }
+				  console.log(tipoDeUsuario);
+			 	});
+			
+				$( '.btn_voltar').on( "click", function() {
+					$('.btn_voltar').hide();
+					$('.btn_avancar').show();
+				  	$('.btn_salvar').hide();
+				  	$('.dividir_usuario').show();
+				  	$('.cadastro_pessoa_juridica').hide();
+				  	$('.cadastro_pessoa_fisica').hide();
+				});
+
 			});
 		</script>
 		<title>Easy-Issue - Cadastro</title>
@@ -31,10 +62,10 @@
 					<h2>Para inciar precisamos especificar qual o tipo de uso do sistema</h2><br>
 
 					<p>Quem vai utilizar o sistema? 
-						<select>
-							<option id="selecione">--Selecione--</option>
-							<option id="pessoa_fisica">Eu</option>
-							<option id="pessoa_juridica">Minha empresa</option>
+						<select id="userTypeSelected">
+							<option id="selecione" value="">--Selecione--</option>
+							<option id="pessoa_fisica" value="Eu">Eu</option>
+							<option id="pessoa_juridica" value="Minha empresa">Minha empresa</option>
 						</select>
 					</p>
 				</div>
@@ -60,7 +91,7 @@
 			</div>
 
 			<div class="botao">
-				<input type="button" value="Cancelar" class="btn_cancelar" />
+				<input type="button" value="Cancelar" class="btn_cancelar"/>
 				<input type="button" value="Voltar" class="btn_voltar" />
 				<input type="button" value="Avançar" class="btn_avancar" />
 				<input type="button" value="Salvar" class="btn_salvar" />

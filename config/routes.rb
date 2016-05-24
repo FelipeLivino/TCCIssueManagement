@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
   get "visualizarIssues" => "issues#visualizarIssue"
-  root "issues#visualizarIssue"
+  get "cadastroUsuario" => "usuarios#cadastro_usuario_inicializacaoSistema"
+
+
+  root "usuarios#login"
+
+  #root "issues#visualizarIssue"
 end

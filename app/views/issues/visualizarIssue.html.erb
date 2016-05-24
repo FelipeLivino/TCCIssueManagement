@@ -21,10 +21,10 @@
 					<tbody>
 						<% @issues.each do |issue| %>
 							<tr>
-								<td><% issue.nome %></td>
-								<td><% issue.status %></td>
-								<td><% issue.sla %></td>
-								<td><% issue.idOwner %></td>
+								<td><%= issue.nome %></td>
+								<td><%= issue.status %></td>
+								<td><%= issue.sla %></td>
+								<td><%= issue.idOwner %></td>
 							</tr>
 						<% end %>	
 					</tbody>	
