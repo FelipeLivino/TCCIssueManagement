@@ -1,0 +1,2 @@
+class PaineisController < ApplicationController
+end

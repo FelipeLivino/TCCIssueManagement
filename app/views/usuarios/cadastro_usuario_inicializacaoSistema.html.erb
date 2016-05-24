@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="file:///C:/Users/Felipe/Documents/TCC/html%20-%20sem%20ruby/js/jquery-2.2.3.min">
+			$(document).on('ready',function{
+				alert('funcionou');	
+			});
+		</script>
+		<title>Easy-Issue - Cadastro</title>
+		<meta charset="utf-8">
+		<style>
+			.cadastro_pessoa_fisica{
+				display:none;
+			}
+			.cadastro_pessoa_juridica{
+				display:none;
+			}
+			.btn_voltar{
+				display:none;
+			}
+			.btn_salvar	{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div_principal">
+			
+			<div class="dividir_usuario">
+				<div class="tipoUsuario">
+					<h2>Para inciar precisamos especificar qual o tipo de uso do sistema</h2><br>
+
+					<p>Quem vai utilizar o sistema? 
+						<select>
+							<option id="selecione">--Selecione--</option>
+							<option id="pessoa_fisica">Eu</option>
+							<option id="pessoa_juridica">Minha empresa</option>
+						</select>
+					</p>
+				</div>
+				
+			</div>
+			
+			<div class="cadastro_pessoa_fisica">
+				Nome: <input type="text" required="true" />
+				Email: <input type="email" required="true"/><br>
+				Celular: <input type="text" required="true"/>
+				Telefone residencial: <input type="text"/><br>
+				CPF: <input type="text"/><br>
+				Aceito receber informações por email: <input type="checkbox"></input><br><br>
+				Senha: <input type="password"/><br>
+				Repita sua senha: <input type="password"/>
+			</div>
+			
+			<div class="cadastro_pessoa_juridica">
+				Nome: <input type="text" required="true" />
+				Email: <input type="email" required="true"/><br>
+				Telefone: <input type="text"/> 
+				CNPJ: <input type="text"/><br>
+			</div>
+
+			<div class="botao">
+				<input type="button" value="Cancelar" class="btn_cancelar" />
+				<input type="button" value="Voltar" class="btn_voltar" />
+				<input type="button" value="Avançar" class="btn_avancar" />
+				<input type="button" value="Salvar" class="btn_salvar" />
+			</div>
+
+		</div>
+	</body>
+</html>

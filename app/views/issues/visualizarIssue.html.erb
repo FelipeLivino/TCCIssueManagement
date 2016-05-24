@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div class="div_principal">
+			<div class="tabela">
+				<% nav_bar brand:"Easy Task" %>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Nome</th>
+							<th>Descrição</th>
+							<th>Status</th>
+							<th>Proprietário</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% @issues.each do |issue| %>
+							<tr>
+								<td><% issue.nome %></td>
+								<td><% issue.status %></td>
+								<td><% issue.sla %></td>
+								<td><% issue.idOwner %></td>
+							</tr>
+						<% end %>	
+					</tbody>	
+
+				</table>
+			</div>
+
+			<div class="buttons">
+				<input type="button" value="Excluir"/>
+				<input type="button" value="Editar"/>
+				<input type="button" value="Novo"/>
+			</div>
+
+		</div>
+	</body>
+</html>
