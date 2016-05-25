@@ -5,9 +5,17 @@
 		<title></title>
 	</head>
 	<body>
+		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+			<%= menu_group do %>
+		        <%= menu_item "Painéis", root_url %>
+		        <%= menu_item "Issue", root_url %>
+		        <%= menu_item "Perfis", root_url %>
+		        <%= menu_item "Usuários", root_url %>
+		    <% end %>
+		<% end %>
 		<div class="div_principal">
 			<div class="tabela">
-				<% nav_bar brand:"Easy Task" %>
+				
 				<table class="table table-bordered">
 					<thead>
 						<tr>
@@ -15,16 +23,17 @@
 							<th>Nome</th>
 							<th>Descrição</th>
 							<th>Status</th>
-							<th>Proprietário</th>
+							<th>Tipo</th>
 						</tr>
 					</thead>
 					<tbody>
 						<% @issues.each do |issue| %>
 							<tr>
+								<td><input type="radio" name="group1"></input></td>
 								<td><%= issue.nome %></td>
+								<td><%= issue.descricao %></td>
 								<td><%= issue.status %></td>
-								<td><%= issue.sla %></td>
-								<td><%= issue.idOwner %></td>
+								<td><%= issue.tipo %></td>
 							</tr>
 						<% end %>	
 					</tbody>	
@@ -39,5 +48,6 @@
 			</div>
 
 		</div>
+
 	</body>
 </html>

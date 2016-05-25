@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160522203308) do
+ActiveRecord::Schema.define(version: 20160525042814) do
 
   create_table "campos", force: :cascade do |t|
     t.string   "nome"
@@ -46,6 +46,10 @@ ActiveRecord::Schema.define(version: 20160522203308) do
     t.string   "idOwner"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "descricao"
+    t.string   "tipo"
+    t.date     "dtInicio"
+    t.date     "dtFim"
   end
 
   create_table "painels", force: :cascade do |t|
