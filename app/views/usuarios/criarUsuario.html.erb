@@ -6,27 +6,24 @@
 	</head>
 	<body>
 		<div class="div_principal">
-			<div class="editar_pessoa_fisica">
-				<p>Selecionar Perfil: 
-					<select>
-						<option id="">Perfis disponíveis</option>
-					</select>
-				</p>
-				Nome: <input type="text" required="true" />
-				Email: <input type="email" required="true"/><br>
-				Celular: <input type="text" required="true"/>
-				Telefone residencial: <input type="text"/><br>
-				CPF: <input type="text"/><br>
-				Aceito receber informações por email: <input type="checkbox"></input><br><br>
-				Senha: <input type="password"/><br>
-				Repita sua senha: <input type="password"/>
+			<%= form_for Usuario.new do |f| %>
+				<div class="editar_pessoa_fisica">
+					Nome: <input type="text" required="true" name="usuario[nomeemail]" />
+					Email: <input type="email" required="true" name="usuario[email]"/><br>
+					Celular: <input type="text" required="true" name="usuario[celular]"/>
+					Telefone residencial: <input type="text" name="usuario[telefone]"/><br>
+					CPF: <input type="text" name="usuario[cpf]"/><br>
+					Aceito receber informações por email: <input type="checkbox" name="usuario[rails]"/><br><br>
+					Senha: <input type="password" name="usuario[senha]"/><br>
+					Repita sua senha: <input type="password" />
 
-			</div>
+				</div>
 
-			<div class="button">
-				<input type="button" value="btn_salvar"/>
-				<input type="button" value="btn_cancelar"/>
-			</div>
+				<div class="button">
+					<input type="button" value="btn_salvar"/>
+					<input type="button" value="btn_cancelar"/>
+				</div>
+			<% end %>
 		</div>
 	</body>
 </html>

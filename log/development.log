@@ -1900,3 +1900,577 @@ Processing by IssuesController#visualizarIssue as HTML
   [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
   Rendered issues/visualizarIssue.html.erb within layouts/application (2.8ms)
 Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCelularToUsuario (20160527230626)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "usuarios" ADD "celular" varchar[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160527230626"]]
+  [1m[36m (115.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTelefoneToUsuario (20160527230729)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "usuarios" ADD "telefone" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160527230729"]]
+  [1m[36m (211.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddCpfToUsuario (20160527230818)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "usuarios" ADD "cpf" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160527230818"]]
+  [1m[36m (75.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddOptinToUsuario (20160527230850)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "usuarios" ADD "optin" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160527230850"]]
+  [1m[36m (104.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:27:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.6ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 1461ms (Views: 1429.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/paineis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/issues.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/empresas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/perfis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/projetos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/recursos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/empresas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/jquery-2.2.3.min.self-0c1f22fd006ec3137177f2e25c6077e6d62c8c5109c935f26654d1a3dc8a2eef.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/paineis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/perfis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/projetos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/recursos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-29 12:27:53 -0300
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 12:28:06 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2016-05-29 12:28:44 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KE+oLhBEENIOi0x/6x5WUsJIlaPcSykNpzyyHkrJzlz8LuMGTvZr7QEEpA8CJp5PyyPzTH0PPSBoi1ZiMzcJoA==", "issue"=>{"nome"=>"fernanda", "descricao"=>"Amorim", "tipo"=>"Nova funcionalidade", "dtInicio"=>"10/10/2010", "dtFim"=>"10/10/2010", "status"=>"Ativo"}}
+  [1m[36mIssue Load (0.8ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:28:49 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:28:52 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 12:29:03 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2016-05-29 12:29:18 -0300
+Processing by IssuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/qexqCfeWuMb7t0pkHZNOpvoZTeXrEtF2cbTi6ac1vXm9Xu/i0CVIPgUwRPeREp4wTHe38apQDY0P8yV2S0pw==", "issue"=>{"nome"=>"testete", "descricao"=>"tesre", "tipo"=>"Bug", "dtInicio"=>"20/06/2014", "dtFim"=>"20/06/2014", "status"=>"Ativo"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (45.6ms)[0m  [1mINSERT INTO "issues" ("nome", "descricao", "tipo", "dtInicio", "dtFim", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "testete"], ["descricao", "tesre"], ["tipo", "Bug"], ["dtInicio", "2014-06-20"], ["dtFim", "2014-06-20"], ["status", "Ativo"], ["created_at", "2016-05-29 15:29:18.195140"], ["updated_at", "2016-05-29 15:29:18.195140"]]
+  [1m[35m (121.2ms)[0m  commit transaction
+  Rendered issues/create.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 340ms (Views: 77.0ms | ActiveRecord: 166.9ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:29:20 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 12:29:34 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2016-05-29 12:29:47 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ivh49U1TuiHkN/hXLqhZpBDZqC/nQjljVkEJ04wOCW9emTPdE+HBHuu4ECfHkJG5GbLOwEYGLU6Z9u2v9fDOkw==", "issue"=>{"nome"=>"tet2", "descricao"=>"teste", "tipo"=>"Bug", "dtInicio"=>"20/06/2014", "dtFim"=>"20/06/2014", "status"=>"Ativo"}}
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:29:51 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:46:05 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.5ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:46:16 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.4ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/paineis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/perfis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/issues.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/empresas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/projetos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/recursos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/empresas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/jquery-2.2.3.min.self-0c1f22fd006ec3137177f2e25c6077e6d62c8c5109c935f26654d1a3dc8a2eef.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/paineis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/perfis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/projetos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/recursos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-29 12:46:18 -0300
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:49:35 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:50:20 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/empresas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/perfis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/issues.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/recursos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/paineis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/projetos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/empresas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/jquery-2.2.3.min.self-0c1f22fd006ec3137177f2e25c6077e6d62c8c5109c935f26654d1a3dc8a2eef.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/paineis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/perfis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/projetos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/recursos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-29 12:50:23 -0300
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 12:56:22 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2016-05-29 12:56:37 -0300
+Processing by IssuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qf3P3lT7JamX9Ln1m9SSBftlxTkfFLaBKLWQ5u/X3gGxrwXJ+GXqanQOpc/V5pVHobx+0U4RvfLFTI/4kGYhA==", "issue"=>{"nome"=>"tet", "descricao"=>"teste3", "tipo"=>"Bug", "dtInicio"=>"10/10/2010", "dtFim"=>"20/06/2014", "status"=>"Ativo"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "issues" ("nome", "descricao", "tipo", "dtInicio", "dtFim", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "tet"], ["descricao", "teste3"], ["tipo", "Bug"], ["dtInicio", "2010-10-10"], ["dtFim", "2014-06-20"], ["status", "Ativo"], ["created_at", "2016-05-29 15:56:37.975410"], ["updated_at", "2016-05-29 15:56:37.975410"]]
+  [1m[35m (149.3ms)[0m  commit transaction
+  Rendered issues/create.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 232ms (Views: 79.4ms | ActiveRecord: 149.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:56:38 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:57:29 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:58:05 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 12:59:21 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.4ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 13:00:41 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 13:00:44 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issues/new" for 127.0.0.1 at 2016-05-29 13:12:40 -0300
+Processing by IssuesController#new as HTML
+  Rendered issues/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 13:12:42 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/issues" for 127.0.0.1 at 2016-05-29 13:12:42 -0300
+Processing by IssuesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sWg6S2YpJM+Utqvdre9vdQNyGkAPrb4WZ/zN7zz4Y0llCXFjOJtf8Js5Q61E16doChl8r67pqjuoSymTRQaktQ==", "issue"=>{"nome"=>"", "descricao"=>"", "tipo"=>"Bug", "dtInicio"=>"", "dtFim"=>"", "status"=>"Ativo"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "issues" ("nome", "descricao", "tipo", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nome", ""], ["descricao", ""], ["tipo", "Bug"], ["status", "Ativo"], ["created_at", "2016-05-29 16:12:42.977511"], ["updated_at", "2016-05-29 16:12:42.977511"]]
+  [1m[36m (315.0ms)[0m  [1mcommit transaction[0m
+  Rendered issues/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 392ms (Views: 74.9ms | ActiveRecord: 315.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 13:12:43 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-29 13:12:49 -0300
+Processing by UsuariosController#login as HTML
+  Rendered usuarios/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160525042814) do
+ActiveRecord::Schema.define(version: 20160527230850) do
 
   create_table "campos", force: :cascade do |t|
     t.string   "nome"
@@ -95,6 +95,10 @@ ActiveRecord::Schema.define(version: 20160525042814) do
     t.string   "senha"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "celular"
+    t.string   "telefone"
+    t.string   "cpf"
+    t.boolean  "optin"
   end
 
   create_table "workflows", force: :cascade do |t|

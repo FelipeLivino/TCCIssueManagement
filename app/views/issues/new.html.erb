@@ -3,6 +3,11 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8"/>
+		<script type="text/javascript">
+			function redirectCancelar(){
+				window.location.href = 	"../issues"	
+			}
+		</script>
 	</head>
 	<body>
 		<%= form_for Issue.new do |f| %>
@@ -22,7 +27,7 @@
 			</select></br>
 
 			<button type="submit">Criar issue</button>
-			
+			<button id="btn_cancel" onclick="redirectCancelar()">Cancelar</button>
 		<% end %>
 	</body>
 </html>
