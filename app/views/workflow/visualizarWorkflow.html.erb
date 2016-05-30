@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		
+		<div class="visualizarWorkflows">
+			Filtro: <select class="filter">
+				<option value="Ativos">Ativos</option>
+				<option value="Inativo">Inativo</option>
+			</select></br>
+
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Nome</th>
+							<th>Descrição</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% @workflow.each do |work| %>
+							<tr>
+								<td><input type="radio" name="group1"></input></td>
+								<td><%= work.nome %></td>
+								<td><%= work.descricao %></td>
+								<td><%= work.status %></td>
+							</tr>
+						<% end %>
+					</tbody>
+
+				</table>
+			</div>
+
+			<button >Editar</button>
+			<button>Visualizar</button>
+		</div>
+
+
+
+
+
+	</body>
+</html>

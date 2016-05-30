@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+			<%= menu_group do %>
+		        <%= menu_item "Painéis", root_url + page.visualizarWorkflow %>
+		        <%= menu_item "Issue", root_url + page.visualizarIssue %>
+		        <%= menu_item "Perfis", root_url %>
+		        <%= menu_item "Usuários", root_url %>
+		    <% end %>
+		<% end %>
+	</body>
+</html>

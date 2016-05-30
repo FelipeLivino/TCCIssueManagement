@@ -17,8 +17,8 @@
 		 	function redirectNew(){
 		 		window.location.href = '../issues/new';	
 		 	}
-			 	 
-
+			
+			
 		</script>
 
 		<title></title>
@@ -27,37 +27,39 @@
 		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
 			<%= menu_group do %>
 		        <%= menu_item "Painéis", root_url %>
-		        <%= menu_item "Issue", root_url %>
+		        <%= menu_item "Issue", root_url%>
 		        <%= menu_item "Perfis", root_url %>
 		        <%= menu_item "Usuários", root_url %>
 		    <% end %>
 		<% end %>
+		
 		<div class="div_principal">
 			<div class="tabela">
-				
-				<table class="table table-bordered">
-					<thead>
-						<tr>
-								<th></th>
-							<th>Nome</th>
-							<th>Descrição</th>
-							<th>Status</th>
-							<th>Tipo</th>
-						</tr>
-					</thead>
-					<tbody>
-						<% @issues.each do |issue| %>
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
 							<tr>
-								<td><input type="radio" name="group1"></input></td>
-								<td><%= issue.nome %></td>
-								<td><%= issue.descricao %></td>
-								<td><%= issue.status %></td>
-								<td><%= issue.tipo %></td>
+								<th></th>
+								<th>Nome</th>
+								<th>Descrição</th>
+								<th>Status</th>
+								<th>Tipo</th>
 							</tr>
-						<% end %>	
-					</tbody>	
+						</thead> 
+						<tbody>
+							<% @issues.each do |issue| %>
+								<tr>
+									<td><input type="radio" name="group1"></input></td>
+									<td><%= issue.nome %></td>
+									<td><%= issue.descricao %></td>
+									<td><%= issue.status %></td>
+									<td><%= issue.tipo %></td>
+								</tr>
+							<% end %>	
+						</tbody>	
 
-				</table>
+					</table>
+				</div>
 			</div>
 
 			<div class="buttons">

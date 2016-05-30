@@ -2474,3 +2474,762 @@ Started GET "/" for 127.0.0.1 at 2016-05-29 13:12:49 -0300
 Processing by UsuariosController#login as HTML
   Rendered usuarios/login.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-29 14:06:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#login as HTML
+  Rendered usuarios/login.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 381ms (Views: 372.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:40:44 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.7ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 269ms (Views: 266.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/workflow.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:40:44 -0300
+
+
+Started GET "/assets/workflow.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:40:44 -0300
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:42:44 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:49:10 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/TCC/TCCIssueManagement/app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:50:03 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Rendered issues/visualizarIssue.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/TCC/TCCIssueManagement/app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.8ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:50:34 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Rendered issues/visualizarIssue.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/TCC/TCCIssueManagement/app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.0ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:50:46 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  Rendered issues/visualizarIssue.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/TCC/TCCIssueManagement/app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/issues/visualizarIssue.html.erb:69: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:51:22 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/empresas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/paineis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/issues.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/projetos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/perfis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/recursos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/usuarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/workflow.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/empresas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/paineis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/perfis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/jquery-2.2.3.min.self-0c1f22fd006ec3137177f2e25c6077e6d62c8c5109c935f26654d1a3dc8a2eef.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/projetos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/recursos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/usuarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/workflow.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-29 20:51:35 -0300
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:51:37 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:51:39 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:51:50 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:52:01 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-29 20:53:27 -0300
+Processing by UsuariosController#login as HTML
+  Rendered usuarios/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:53:32 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:54:32 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.4ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:55:32 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/menu.html.erb" for 127.0.0.1 at 2016-05-29 20:55:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/menu.html.erb"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (7.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:55:49 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/menu" for 127.0.0.1 at 2016-05-29 20:55:50 -0300
+
+ActionController::RoutingError (uninitialized constant MenuController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.0ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:56:01 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menu/menu.html.erb" for 127.0.0.1 at 2016-05-29 20:56:02 -0300
+
+ActionController::RoutingError (No route matches [GET] "/menu/menu.html.erb"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.8ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 20:57:13 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/menu/menu.html.erb" for 127.0.0.1 at 2016-05-29 20:57:14 -0300
+
+ActionController::RoutingError (No route matches [GET] "/menu/menu.html.erb"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.3ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 23:06:29 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (88.7ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 756ms (Views: 604.8ms | ActiveRecord: 88.7ms)
+
+
+Started GET "/menu/menu.html.erb" for 127.0.0.1 at 2016-05-29 23:06:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/menu/menu.html.erb"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.9ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (56.4ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 23:15:30 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.4ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (132.6ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `page' for #<#<Class:0x007f29c9e23ef8>:0x007f29ca4f6cf8>):
+    26: 	<body>
+    27: 		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+    28: 			<%= menu_group do %>
+    29: 		        <%= menu_item "Painéis", root_url + page.visualizarWorkflow %>
+    30: 		        <%= menu_item "Issue", root_url + page.visualizarIssue %>
+    31: 		        <%= menu_item "Perfis", root_url %>
+    32: 		        <%= menu_item "Usuários", root_url %>
+  app/views/issues/visualizarIssue.html.erb:29:in `block (2 levels) in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732291360'
+  app/views/issues/visualizarIssue.html.erb:28:in `block in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732291360'
+  app/views/issues/visualizarIssue.html.erb:27:in `_app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732291360'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 23:15:50 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `page' for #<#<Class:0x007f29c9e23ef8>:0x007f29ca461748>):
+    26: 	<body>
+    27: 		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+    28: 			<%= menu_group do %>
+    29: 		        <%= menu_item "Painéis", root_url + page.visualizarWorkflow.html.erb %>
+    30: 		        <%= menu_item "Issue", root_url + page.visualizarIssue.html.erb  %>
+    31: 		        <%= menu_item "Perfis", root_url %>
+    32: 		        <%= menu_item "Usuários", root_url %>
+  app/views/issues/visualizarIssue.html.erb:29:in `block (2 levels) in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908731986080'
+  app/views/issues/visualizarIssue.html.erb:28:in `block in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908731986080'
+  app/views/issues/visualizarIssue.html.erb:27:in `_app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908731986080'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.7ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 23:16:09 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (50.1ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `visualizarWorkflow' for #<#<Class:0x007f29c9e23ef8>:0x007f29ca094480>):
+    26: 	<body>
+    27: 		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+    28: 			<%= menu_group do %>
+    29: 		        <%= menu_item "Painéis", root_url + visualizarWorkflow.html.erb %>
+    30: 		        <%= menu_item "Issue", root_url + visualizarIssue.html.erb  %>
+    31: 		        <%= menu_item "Perfis", root_url %>
+    32: 		        <%= menu_item "Usuários", root_url %>
+  app/views/issues/visualizarIssue.html.erb:29:in `block (2 levels) in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908729984620'
+  app/views/issues/visualizarIssue.html.erb:28:in `block in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908729984620'
+  app/views/issues/visualizarIssue.html.erb:27:in `_app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908729984620'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.9ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-29 23:17:42 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (34.3ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `page' for #<#<Class:0x007f29c9e23ef8>:0x007f29c9ef9fd0>):
+    27: 		<%= nav_bar brand: "Infinity Issues", brand_link: root_url, responsive: true  do %>
+    28: 			<%= menu_group do %>
+    29: 		        <%= menu_item "Painéis", root_url %>
+    30: 		        <%= menu_item "Issue", root_url + page.issues %>
+    31: 		        <%= menu_item "Perfis", root_url %>
+    32: 		        <%= menu_item "Usuários", root_url %>
+    33: 		    <% end %>
+  app/views/issues/visualizarIssue.html.erb:30:in `block (2 levels) in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732034620'
+  app/views/issues/visualizarIssue.html.erb:28:in `block in _app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732034620'
+  app/views/issues/visualizarIssue.html.erb:27:in `_app_views_issues_visualizar_ssue_html_erb__2627841813471199475_69908732034620'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.9ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-30 00:55:14 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[36mIssue Load (63.0ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered issues/visualizarIssue.html.erb within layouts/application (112.3ms)
+Completed 200 OK in 613ms (Views: 494.4ms | ActiveRecord: 63.0ms)
+
+
+Started GET "/visualizarIssues" for 127.0.0.1 at 2016-05-30 00:55:48 -0300
+
+ActionController::RoutingError (No route matches [GET] "/visualizarIssues"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/felipe/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (804.8ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (856.2ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/felipe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.4ms)
+
+
+Started GET "/issues" for 127.0.0.1 at 2016-05-30 01:12:27 -0300
+Processing by IssuesController#visualizarIssue as HTML
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered issues/visualizarIssue.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDescriacaoToWorkflow (20160530043052)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (62.1ms)[0m  [1mALTER TABLE "workflows" ADD "descricao" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160530043052"]]
+  [1m[36m (131.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/workflow" for 127.0.0.1 at 2016-05-30 01:40:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WorkflowController#visualizarWorkflow as HTML
+  [1m[35mIssue Load (0.4ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered workflow/visualizarWorkflow.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 222ms (Views: 204.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/workflow" for 127.0.0.1 at 2016-05-30 01:41:23 -0300
+Processing by WorkflowController#visualizarWorkflow as HTML
+  [1m[36mIssue Load (0.5ms)[0m  [1mSELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000[0m
+  Rendered workflow/visualizarWorkflow.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workflow" for 127.0.0.1 at 2016-05-30 01:41:48 -0300
+Processing by WorkflowController#visualizarWorkflow as HTML
+  [1m[35mIssue Load (0.5ms)[0m  SELECT  "issues".* FROM "issues"  ORDER BY "issues"."nome" ASC LIMIT 1000
+  Rendered workflow/visualizarWorkflow.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.7ms)
